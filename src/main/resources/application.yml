@@ -4,7 +4,7 @@ spring:
   profiles:
     active: dev
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/hawk_db?serverTimezone=CST
+    url: jdbc:mysql://192.227.231.128:3306/hawk_db?serverTimezone=CST
     username: root
     password: colin123.
     driver-class-name: com.mysql.cj.jdbc.Driver
