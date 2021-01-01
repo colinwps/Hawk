@@ -8,6 +8,20 @@ spring:
     username: root
     password: colin123.
     driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    maxActive: 30
+    #最小连接数
+    minIdle: 5
+    #获取最大的链接等待时间
+    maxWait: 10000
+    #解决mysql8小时的问题，验证时候正常
+    validationgQuery: SELECT 'x'
+    #空闲连接检查间隔
+    timeBetweenEvictionRunMillis: 60000
+    #空闲连接最小空闲时间
+    minEvictableIdleTimeMillis: 300000
+
 ---
 spring:
   config:
